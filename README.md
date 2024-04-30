@@ -59,7 +59,7 @@ source ~/.bashrc
   Fabric version: Specifies the version of Hyperledger Fabric to install.
   Fabric CA version: Specifies the version of Fabric Certificate Authority (CA) to install. The CA provides services for issuing and managing digital certificates used by clients and peers in the network.
 
-   *Now you' have to creat a diretory where u will install all the fabric:--*
+   *Now you' have to creat a diretory where u will install the fabric:--*
     - mkdir fabric-network
     - put verion as :=(Fabric v2.4.4 and Fabric CA v1.5.3)
     ```
