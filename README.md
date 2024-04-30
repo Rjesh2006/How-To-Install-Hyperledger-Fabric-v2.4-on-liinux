@@ -74,4 +74,18 @@ source ~/.bashrc
     curl -sSL https://bit.ly/2ysbOFE | bash -s
    ````
 
-   *after the installatio you will be able to see this interface---🥇*
+   *after the installation ---To test the our installation, we will run test network that comes with fabric-samples:*
+ ```
+ cd fabric-samples/test-network
+ ./network.sh up createChannel -ca -c mychannel -s couchdb
+ ```
+```
+docker -ps 
+```
+*you will see some container's are running *
+ *after running this command u will be able to see 🥸this insterface:-*
+ - ![image](https://github.com/Rjesh2006/How-To-Install-Hyperledger-Fabric-v2.4-on-liinux/assets/143868643/5c8d980c-444d-4215-8fbb-4063a8cc32d8)
+
+    **- if there is any error 😰then you have follow this GIVEN  commands :---*
+
+
