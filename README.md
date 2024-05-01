@@ -86,7 +86,7 @@ docker -ps
  *after running this command u will be able to see 🥸this insterface:-*
  - ![image](https://github.com/Rjesh2006/How-To-Install-Hyperledger-Fabric-v2.4-on-liinux/assets/143868643/5c8d980c-444d-4215-8fbb-4063a8cc32d8)
 
-    **- if there is any error 😰then you have follow this GIVEN  commands :---*
+    **- if there is any error 😰then you have to follow this GIVEN  commands :---*
 
  ***update to be continued.......**
 
