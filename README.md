@@ -95,6 +95,7 @@ docker -ps
  - it will install the latest fabric ledger
    -then u will seee this interface:-⏬
    545454
+   
 
 ## Setting up the configtxgen tool-
 
@@ -163,20 +164,21 @@ configtxgen --help
   *Our instance of the test network was deployed without creating an application channel. However, the test network script creates the system channel when you issue the ./network.sh up command. Under the covers, the script uses the configtxgen tool and the configtx.yaml file to build the genesis block of the system channel. Because the system channel is used to create other channels, we need to take some time to understand the orderer system channel before we can create an application channel.*
 
 ## The orderer system channel:____
-  The first channel that is created in a Fabric network is the system channel. The system channel defines the set of ordering nodes that form the ordering service and the set of organizations that serve as ordering service administrators.
+  The first channel that is created in a Fabric network is the system channel. The system channel defines the set of ordering nodes that     form the ordering service and the set of organizations that serve as ordering service administrators.
   
-  The system channel also includes the organizations that are members of blockchain consortium. The consortium is a set of peer organizations that belong to the system channel, but are not administrators of the ordering service. Consortium members have the ability to create new channels and include other consortium organizations as channel members.
+  The system channel also includes the organizations that are members of blockchain consortium. The consortium is a set of peer              organizations that belong to the system channel, but are not administrators of the ordering service. Consortium members have the ability   to create new channels and include other consortium organizations as channel members.
   
-  The genesis block of the system channel is required to deploy a new ordering service. The test network script already created the system channel genesis block when you issued the ./network.sh up command. The genesis block was used to deploy the single ordering node, which used the block to create the system channel and form the ordering service of the network. If you examine the output of the ./network.sh script, you can find the command that created the genesis block in your logs:
+  The genesis block of the system channel is required to deploy a new ordering service. The test network script already created the system   channel genesis block when you issued the ./network.sh up command. The genesis block was used to deploy the single ordering node, which    used the block to create the system channel and form the ordering service of the network. If you examine the output of the ./network.sh    script, you can find the command that created the genesis block in your logs:
    
  - *You can now create the channel by using the following command:*🥇
+ - 
    ```
    peer channel create -o localhost:7050  --ordererTLSHostnameOverride orderer.example.com -c channel1 -f ./channel-artifacts/channel1.tx --outputBlock ./channel-artifacts/channel1.block --tls --cafile "${PWD}/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem"
    ```
  The command above provides the path to the channel creation transaction file using the -f flag and uses the -c flag to specify the         channel name. The -o flag is used to select the ordering node that will be used to create the channel. The --cafile is the path to the     TLS certificate of the ordering node. When you run the peer channel create command, the peer CLI will generate the following response:
  
  - interface:----
-    - 4545
+    - 
   
  - *Because we are using a Raft ordering service, you may get some status unavailable messages that you can safely ignore. The command         will return the genesis block of the new channel to the location specified by the --outputBlock flag.*
    
