@@ -88,13 +88,15 @@ docker -ps
 
     **- if there is any error 😰then you have to follow this GIVEN  commands :---*
 
- ***update to be continued.......**
+## follow the given commands:--
  ```
     curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.2.2 1.4.9
-```
+ ```
  - it will install the latest fabric ledger
    -then u will seee this interface:-⏬
-   545454
+   - ![Screenshot from 2024-05-05 21-34-19](https://github.com/Rjesh2006/How-To-Install-Hyperledger-Fabric-v2.4-on-liinux/assets/143868643/03cc4704-72e3-408a-92ff-bff2f2bf98a8)
+   - ![Screenshot from 2024-05-05 21-34-40](https://github.com/Rjesh2006/How-To-Install-Hyperledger-Fabric-v2.4-on-liinux/assets/143868643/cff51ea7-2246-4013-b825-59f40502def3)
+
    
 
 ## Setting up the configtxgen tool-
@@ -102,7 +104,7 @@ docker -ps
 - Channels are created by building a channel creation transaction and submitting the transaction to the ordering service. The channel        creation transaction specifies the initial configuration of the 
    channel and is used by the ordering service to write the channel genesis   block.
 -  While it is possible to build the channel creation transaction file manually, it is easier to use the configtxgen tool. The tool works     by reading a configtx.yaml file that defines the configuration of 
-   your channel, and then writing the relevant information into the         channel creation transaction. The configtxgen tool was installed when you ran the curl command in the previous step.
+   your channel, and then writing the relevant information into the         channel creation transaction. The configtxgen tool was            installed when you ran the curl command in the previous step.
 
  For the purposes of this tutorial, we will want to operate from the test-network directory inside fabric-samples. Navigate to that         directory using the   following command:
  ```
@@ -158,8 +160,6 @@ configtxgen --help
 ```
 ./network.sh down
 ```
-- interface::--
-- 4545
 
 *You can then use the following command to start the test network:*
 ```
@@ -167,7 +167,12 @@ configtxgen --help
 
 ```
 - interface:--
-  4545
+  ![Screenshot from 2024-05-05 21-34-58](https://github.com/Rjesh2006/How-To-Install-Hyperledger-Fabric-v2.4-on-liinux/assets/143868643/73db6f54-c0d9-46f9-acf8-b603d7ad27ee)
+
+  **note:--4545**
+- ![Screenshot from 2024-05-05 21-37-16](https://github.com/Rjesh2006/How-To-Install-Hyperledger-Fabric-v2.4-on-liinux/assets/143868643/1ea14ab6-f2be-4e2c-8039-359edfe997a3)
+
+
 
 
    This command will create a Fabric network with the two peer organizations and the single ordering organization defined in the  configtx.yaml file. The peer organizations will operate one peer each, while the 
@@ -200,13 +205,12 @@ configtxgen --help
  be used to create the channel. The --cafile is the path to the  TLS certificate of the ordering node. When you run the peer channel create command, the peer CLI will generate the following response:
  
  - interface:----
-    - 
-  
- - *Because we are using a Raft ordering service, you may get some status unavailable messages that you can safely ignore. The command         will return the genesis block of the new channel to the location 
-    specified by the --outputBlock flag.*
+    - ![Screenshot from 2024-05-05 21-49-34](https://github.com/Rjesh2006/How-To-Install-Hyperledger-Fabric-v2.4-on-liinux/assets/143868643/b4bc5fca-25bb-4349-b2b9-93850527f221)
+
+   -  Note:--⬇️
+   - *Because we are using a Raft ordering service, you may get some status unavailable messages that you can safely ignore. The command         will return the genesis block of the new channel to the location 
+      specified by the --outputBlock flag.*
    
-   - interface:--
-     45454
 
 
  **update to be continued later:_▶️ :---**
